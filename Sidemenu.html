@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar Layout</title>
+    <link rel="stylesheet" href="CSS/sidemenu.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="Home.html" target="contentFrame">
+                        <i class='bx bxs-home'></i>
+                        <span class="s-item">HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="search.html" target="contentFrame">
+                        <i class='bx bx-search-alt'></i>
+
+                        <span class="s-item">SEARCH</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pcard.html" target="contentFrame">
+                        <i class='bx bx-user bx-detail'></i>
+
+                        <span class="s-item">USER DETAILS</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="dash.html" target="contentFrame">
+                        <i class='bx bx-grid'></i>
+
+                        <span class="s-item">DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dash.html" target="contentFrame">
+                        <i class='bx bxs-cog'></i>
+
+                        <span class="s-item">SETTINGS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bx-log-out'></i>
+
+                        <span class="s-item">LOG OUT</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <iframe name="contentFrame" src="home.html" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>

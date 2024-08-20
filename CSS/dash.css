@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    padding: 20px;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    padding: 20px;
+     
+}
+.topb{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px 10px;
+}
+.search{
+    position: relative;
+    width: 200px;
+    margin: 10px 10px;
+ 
+}
+.search label{
+    position: relative;
+    width: 100%;
+}
+.search label input{
+    
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    border: 1px solid black;
+    outline: none;
+}
+.search label i{
+    position: absolute;
+    top:0;
+    left: 10px;
+    font-size: 1.2rcm;
+}
+.cardbox{
+    position:relative;
+    width:100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.cardbox .card{
+    position: relative;
+    background: white;
+    height: 200px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgb(0, 0,0,0.08);
+
+}
+.cardbox .card .details{
+    position: relative;
+    font-weight: 500;
+    font-size: 56px;
+    color: #1b1733;
+}
+.cardbox .card .cname{
+    color: black;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.cardbox .card i{
+    font-size: 56px;
+    color: black;
+}
+.cardbox .card:hover{
+    background: grey;
+}
+
+.con{
+    padding: 20px;
+}
+.row{
+    display: flex;
+    
+  }
+.card1 {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+
+  }
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+  

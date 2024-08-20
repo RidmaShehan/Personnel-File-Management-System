@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CSS/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body style="background: white;">
+  <div class="con">
+    <div class="colum1">
+    <div class="row card-container">
+      <div class="card" onclick="openPage('form.html')">
+        <img src="img/person.png" width="50px" height="50px">
+      </div>
+      <div class="card" onclick="openPage('salary.html')">
+        <img src="img/salary.png" width="50px" height="50px">
+      </div>
+      <div class="card" onclick="openPage('promotions.html')">
+        <img src="img/goal.png" width="50px" height="50px">
+      </div>
+      <div class="card" onclick="openPage('activity.html')">
+        <img src="img/test.png" width="50px" height="50px">
+      </div>
+    </div>
+    <div class="row card-container">
+      <div class="card" onclick="openPage('transfer.html')">
+        <img src="img/transfer.png" width="50px" height="50px">
+      </div>
+      <div class="card" onclick="openPage('salaryIncrement.html')">
+        <img src="img/time.png" width="50px" height="50px">
+      </div>
+      <div class="card" onclick="openPage('form.html')">
+        <img src="img/ledger.png" width="50px" height="50px">
+      </div>
+    </div>
+  </div>
+  <div class="colum2">
+    <div class="p1">
+      <div class="p2">
+        <div class="x"></div>
+        <div class="aigille">
+          <div class="a1">
+            <div class="a2"></div>
+          </div>
+          <div class="hour-hand"></div>
+          <div class="minute-hand"></div>
+          <div class="second-hand"></div>
+        </div>
+       
+        <div class="number" id="num12">12</div>
+        <div class="number" id="num1">1</div>
+        <div class="number" id="num2">2</div>
+        <div class="number" id="num3">3</div>
+        <div class="number" id="num4">4</div>
+        <div class="number" id="num5">5</div>
+        <div class="number" id="num6">6</div>
+        <div class="number" id="num7">7</div>
+        <div class="number" id="num8">8</div>
+        <div class="number" id="num9">9</div>
+        <div class="number" id="num10">10</div>
+        <div class="number" id="num11">11</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    function openPage(pageUrl) {
+      window.location.href = pageUrl;
+    }
+  </script>
+
+</body>
+
+</html>
