@@ -34,6 +34,7 @@
                 <div class="profile-card" onclick="showLargeCard(this)">
                     <img src="Assests/5.jpg" alt="Profile 5">
                 </div>
+                
             </div>
             <div id="large-card" class="large-card">
              <div class="boxs">
@@ -50,12 +51,24 @@
                 <p>Details  -  details</p>
                 <p>Details  -  details</p>
            
-             </div>
-                <button class="edit-button">Edit</button>
             </div>
-    </div>
- </div>
-  <script src="Js/pcard.js"></script>
+            <button id="edit-button" class="edit-button">Edit</button>
+        </div>
+</div>
+</div>
+<script src="Js/pcard.js"></script>
+<script>
+ function loadEditPage() {
+  
+    var largeCardImgSrc = document.getElementById('large-profile-img').src;
+   
+    localStorage.setItem('editImageSrc', largeCardImgSrc);
+    
+    window.location.href = 'profile.html';
+}
+
+document.querySelector('.edit-button').addEventListener('click', loadEditPage);
+</script>
 </body>
 
 </html>
