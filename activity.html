@@ -28,14 +28,14 @@
                     
                    </ul>
                 </div>
-                <form action="">
+                <form action="php/activity.php" method="post" enctype="multipart/form-data">
                     <div class="form-one form-step active">
                         <div class="bg-svg"></div>
                             <h2>Step 1: Personal Information</h2>
                             <p>enter your information correctly</p>
                             <div>
                                 <label for="employee-id">සේවක අංකය:</label>
-                                <input type="text" id="employee-id" name="employee-id" readonly value="1">
+                                <input type="text" id="employee-id" name="employee-id" required >
                             </div>
                            
                                                  
@@ -64,7 +64,7 @@
                          <div class="btn-group">
                             <button type="button" class="btn-prev" disabled>back</button>
                             <button type="button" class="btn-next" >Next</button>
-                            <button type="button" class="btn-submit" >submit</button>
+                            <button type="submit" class="btn-submit" disabled>submit</button>
                        </div>
                     </div>          
                 </form>
@@ -72,5 +72,6 @@
         </div>
     </div>
     <script src="Js/activity.js"></script>
+    <script src="Js/func.js"></script>
 </body>
 </html>

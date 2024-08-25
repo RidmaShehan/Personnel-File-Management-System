@@ -6,7 +6,7 @@ include 'database.php';
 $keyword = isset($_GET['keyword']) ? $_GET['keyword'] : '';
 
 
-$sql = "SELECT name FROM teachers WHERE name LIKE ?";
+$sql = "SELECT name FROM users WHERE name1 LIKE ?";
 $stmt = $conn->prepare($sql);
 $searchTerm = "%$keyword%";
 $stmt->bind_param("s", $searchTerm);

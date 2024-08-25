@@ -4,40 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="CSS/pcard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/pcard.css">
 </head>
 <body>
- <div class="con">
-    <div class="topb">
-        <div class="search">
-            <label >
-                <input type="text" id="search-keyword" placeholder="search here">
-                <i class='bx bx-search-alt-2'></i>
-            </label>
-        </div>
-    </div>
-    <div  pcon>
-            <div class="profile-container">
-                <div class="profile-card" onclick="showLargeCard(this)">
-                    <img src="Assests/1.png" alt="Profile 1">
-                </div>
-                <div class="profile-card" onclick="showLargeCard(this)">
-                    <img src="Assests/2.webp" alt="Profile 2">
-                </div>
-                <div class="profile-card" onclick="showLargeCard(this)">
-                    <img src="Assests/3.jpg" width="50" height="50" alt="Profile 3">
-                </div>
-                <div class="profile-card" onclick="showLargeCard(this)">
-                    <img src="Assests/4.jpg" alt="Profile 4">
-                </div>
-                <div class="profile-card" onclick="showLargeCard(this)">
-                    <img src="Assests/5.jpg" alt="Profile 5">
-                </div>
-                
+    <div class="con">
+        <div class="topb">
+            <div class="search">
+                <label >
+                    <input type="text" id="search-keyword" placeholder="search here">
+                    <i class='bx bx-search-alt-2'></i>
+                </label>
             </div>
-            <div id="large-card" class="large-card">
-             <div class="boxs">
+        </div>
+        <div class="pcon">
+            <div class="profile-container">
+               
+            </div>
+        </div>
+        <div id="large-card" class="large-card">
+            <div class="boxs">
                 <div class="image-container">
                     <img src="" alt="Large Profile" id="large-profile-img">
                 </div>
@@ -45,30 +31,18 @@
                     <p class="na1">Name</p>
                     <p class="po1">Position</p>
                 </div>
-             </div>
-             <div class="te1">
+            </div>
+            <div class="te1">
                 <p>Details  -  details</p>
                 <p>Details  -  details</p>
                 <p>Details  -  details</p>
-           
             </div>
             <button id="edit-button" class="edit-button">Edit</button>
         </div>
-</div>
-</div>
-<script src="Js/pcard.js"></script>
-<script>
- function loadEditPage() {
-  
-    var largeCardImgSrc = document.getElementById('large-profile-img').src;
-   
-    localStorage.setItem('editImageSrc', largeCardImgSrc);
-    
-    window.location.href = 'profile.html';
-}
+    </div>
 
-document.querySelector('.edit-button').addEventListener('click', loadEditPage);
-</script>
+ <script src="Js/pcard.js"></script>
+ <script src="Js/func.js"></script>
 </body>
 
 </html>

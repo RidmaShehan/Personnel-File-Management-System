@@ -34,14 +34,14 @@
                     </li>
                    </ul>
                 </div>
-                <form action="">
+                <form action="php/form.php" method="post" enctype="multipart/form-data">
                     <div class="form-one form-step active">
                         <div class="bg-svg"></div>
                             <h2>Step 1: Personal Information</h2>
                             <p>enter your personal information correctly</p>
                             <div>
                                 <label for="employee-id">සේවක අංකය:</label>
-                                <input type="text" id="employee-id" name="employee-id" readonly value="1">
+                                <input type="text" id="employee-id" name="employee-id" readonly >
                             </div>
                             <div>
                                 <label for="nic">ජා.හැ.අංකය:</label>
@@ -60,15 +60,15 @@
                                 <label for="option1">තනතුර:</label>
                                 <select id="option1" name="option1" required>
                                    <option value="">විකල්පයක් තෝරන්න</option>
-                                   <option value="Option 1">ශ්‍රි ලංකා පරිපාලන සේවය විශේෂ පන්තිය</option>
-                                   <option value="Option 2">ශ්‍රි ලංකා පරිපාලන සේවය</option>
-                                   <option value="Option 3">ක්‍රමසම්පාදන සේවය</option>
-                                   <option value="Option 4">ශ්‍රි ලංකා ගණකාධිකාරි සේවය</option>
-                                   <option value="Option 5">කළමනාකරණ අධිශ්‍රේණිය</option>
-                                   <option value="Option 6">කළමනාකරණ සේවා නිලධාරී</option>
-                                   <option value="Option 7">සංවර්ධන නිලධාරී</option>
-                                   <option value="Option 8">තොරතුරු හා සංනිවේදන නිලධාරී</option>
-                                   <option value="Option 9">සංස්කෘතික නිලධාරී</option>
+                                   <option value="ශ්‍රි ලංකා පරිපාලන සේවය විශේෂ පන්තිය">ශ්‍රි ලංකා පරිපාලන සේවය විශේෂ පන්තිය</option>
+                                   <option value="ශ්‍රි ලංකා පරිපාලන සේවය">ශ්‍රි ලංකා පරිපාලන සේවය</option>
+                                   <option value="ක්‍රමසම්පාදන සේවය">ක්‍රමසම්පාදන සේවය</option>
+                                   <option value="ශ්‍රි ලංකා ගණකාධිකාරි සේවය">ශ්‍රි ලංකා ගණකාධිකාරි සේවය</option>
+                                   <option value="කළමනාකරණ අධිශ්‍රේණිය">කළමනාකරණ අධිශ්‍රේණිය</option>
+                                   <option value="කළමනාකරණ සේවා නිලධාරී">කළමනාකරණ සේවා නිලධාරී</option>
+                                   <option value="සංවර්ධන නිලධාරී">සංවර්ධන නිලධාරී</option>
+                                   <option value="තොරතුරු හා සංනිවේදන නිලධාරී">තොරතුරු හා සංනිවේදන නිලධාරී</option>
+                                   <option value="සංස්කෘතික නිලධාරී">සංස්කෘතික නිලධාරී</option>
                                 </select>
                             </div>                 
                             <div>
@@ -79,8 +79,8 @@
                                 <label for="option4">ස්ථීර ද නැද්ද යන්න:</label>
                                 <select id="option4" name="option4" required>
                                    <option value="">විකල්පයක් තෝරන්න</option>
-                                   <option value="Option 1">ස්ථීර</option>
-                                   <option value="Option 2">ස්ථීර නැත</option>
+                                   <option value="ස්ථීර">ස්ථීර</option>
+                                   <option value="ස්ථීර නැත">ස්ථීර නැත</option>
                                 </select>
                             </div>
                             <div>
@@ -91,15 +91,15 @@
                                 <label for="option2">වැටුප් කේතය:</label>
                                 <select id="option2" name="option2" required>
                                     <option value="">විකල්පයක් තෝරන්න</option>
-                                    <option value="Option 1">SL-1</option>
-                                    <option value="Option 2">MN-7</option>
-                                    <option value="Option 3">MN-5</option>
-                                    <option value="Option 4">MN-4</option>
-                                    <option value="Option 5">MN-2</option>
-                                    <option value="Option 6">MT-1</option>
-                                    <option value="Option 7">PL-1</option>
-                                    <option value="Option 8">PL-2</option>
-                                    <option value="Option 9">PL-3</option>
+                                    <option value="SL-1">SL-1</option>
+                                    <option value="MN-7">MN-7</option>
+                                    <option value="MN-5">MN-5</option>
+                                    <option value="MN-4">MN-4</option>
+                                    <option value="MN-2">MN-2</option>
+                                    <option value="MT-1">MT-1</option>
+                                    <option value="PL-1">PL-1</option>
+                                    <option value="PL-2">PL-2</option>
+                                    <option value="PL-3">PL-3</option>
                                 </select>
                             </div>        
                             <div>
@@ -110,9 +110,9 @@
                                 <label for="option3">සම්පූර්ණ කර ඇති කාර්යක්ෂමතා කඩයීම:</label>
                                 <select id="option3" name="option3" required>
                                     <option value="">විකල්පයක් තෝරන්න</option>
-                                    <option value="Option 1"> 𝐈</option>
-                                    <option value="Option 2">𝐈𝐈</option>
-                                    <option value="Option 3">𝐈𝐈𝐈</option>
+                                    <option value="𝐈"> 𝐈</option>
+                                    <option value="𝐈𝐈">𝐈𝐈</option>
+                                    <option value="𝐈𝐈𝐈">𝐈𝐈𝐈</option>
                                 </select>
                             </div>    
                             <div>
@@ -137,16 +137,16 @@
                                     <label for="gender">ස්ත්‍රී / පුරුෂ:</label>
                                     <select id="gender" name="gender" required>
                                         <option value="">විකල්පයක් තෝරන්න</option>
-                                        <option value="Male">ස්ත්‍රී</option>
-                                        <option value="Female">පුරුෂ</option>
+                                        <option value="ස්ත්‍රී">ස්ත්‍රී</option>
+                                        <option value="පුරුෂ">පුරුෂ</option>
                                     </select>
                                 </div>
                                 <div>
                                     <label for="status">විවාහක / අවිවාහක:</label>
                                     <select id="status" name="status" required>
                                         <option value="">විකල්පයක් තෝරන්න</option>
-                                        <option value="Single">විවාහක</option>
-                                        <option value="Married">අවිවාහක</option>
+                                        <option value="විවාහක">විවාහක</option>
+                                        <option value="අවිවාහක">අවිවාහක</option>
                                     </select>
                                 </div>
                                 <div>
@@ -166,7 +166,7 @@
                          <div class="btn-group">
                             <button type="button" class="btn-prev" disabled>back</button>
                             <button type="button" class="btn-next" >Next</button>
-                            <button type="button" class="btn-submit" >submit</button>
+                            <button type="submit" class="btn-submit" >submit</button>
                        </div>
                     </div>          
                 </form>
@@ -174,5 +174,16 @@
         </div>
     </div>
     <script src="Js/form.js"></script>
+    <script>
+         
+         window.onload = function() {
+            fetch('php/insert.php')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('employee-id').value = data.next_employee_id;
+                })
+                .catch(error => console.error('Error fetching the next employee ID:', error));
+        };
+    </script>
 </body>
 </html>

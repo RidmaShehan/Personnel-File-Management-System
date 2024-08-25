@@ -81,7 +81,7 @@ body{
 }
 
 .image-container {
-    position: absolute;
+   
     top: 10px;
     left: 20px;
     width: 75px;
@@ -118,15 +118,14 @@ body{
 }
 .boxs{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
 }
 .na1{
-    position: absolute;
-    right: 45px;
+    font-size: 12px;
 }
 .po1{
-    position: absolute;
-    right: 30px;
+    font-size: 12px;
     top: 45px;
 }
 .te1{
